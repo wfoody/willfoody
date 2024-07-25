@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Roboto Mono', monospace;
-  src: url(./RobotoMono-VariableFont_wght.ttf) format('truetype');
+  src: url(../fonts/RobotoMono-VariableFont_wght.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Inter', monospace;
-  src: url(./Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
 }
 
 .app {
@@ -14,10 +14,7 @@
   font-family: 'Robot Mono', monospace;
   color: #39FF14;
   padding: 50px;
-  /* max-width: fit-content; */
 }
-
-
 
 @media (max-width: 600px) {
   .app {
