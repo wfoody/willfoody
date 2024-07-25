@@ -1,0 +1,26 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+    width: fit-content;
+}
+
+.aboutBody {
+    width: 100%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutTitle {
+
+    width: 100%;
+    margin-bottom: 75px;
+    font-size: 50px;
+}
+
+@media (max-width: 800px) {
+    .aboutContainer {
+      padding: 25px;
+    }
+  }

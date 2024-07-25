@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url(./RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter', monospace;
+  src: url(./Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Robot Mono', monospace;
+  color: #39FF14;
+  padding: 50px;
+  /* max-width: fit-content; */
+}
+
+
+
+@media (max-width: 600px) {
+  .app {
+    padding: 50px 0 0;
+    width: 100%;
+  }
+}
+
+a {
+  color: #39FF14;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,77 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+    /* width: 100%; */
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    font-size: 40px;
+}
+
+
+.contactItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* width: 100%; */
+}
+
+.contactTitle {
+    margin-bottom: 75px;
+    font-size: 50px;
+}
+
+
+input {
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    color: #f000ff !important;
+    font-size: 25px;
+    /* width: 100%; */
+}
+
+.contactInput {
+    color: #f000ff !important;
+}
+
+textarea {
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    color: #f000ff;
+    font-size: 24px;
+    /* width: 100%; */
+    height: 100px;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #f000ff;
+}
+
+.submitButton {
+    background-color: #f000ff;
+    color: aliceblue;
+    border: none;
+    font-size: 30px;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+}
+
+.emailSuccessMessage {
+    margin-top: 25px;
+    max-width: 100%;
+    font-size: 30px;
+    text-wrap: wrap;
+}
+
+
+  @media (max-width: 800px) {
+    .contactContainer {
+      padding: 25px;
+    }
+  }

@@ -1,0 +1,58 @@
+.sidebar {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.mobileSidebarLink {
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    padding: 0 25px;
+}
+
+.mobileSidebarList {
+    display: none;
+}
+
+.mobileSidebar {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
+
+    .mobileSidebarList.is-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        top: 100px;
+        font-size: 40px;
+        padding: 20px;
+    }
+} 
+
+@media (min-width: 501px) {
+    .mobileSidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 25px;
+
+        .sidebarItem {
+            margin-right: 5%;
+        }
+    }
+}
