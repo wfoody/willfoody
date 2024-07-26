@@ -19,8 +19,8 @@ function About() {
       setColor(randomColor());
       setBackgroundColor(randomColor())
       console.log(randomColor());
-
   }
+  
   return (
     <div className="container" style={{backgroundColor: backgroundColor}}>
       <Sidebar />
