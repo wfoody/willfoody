@@ -13,23 +13,26 @@ function Sidebar({color, changeColor}) {
     return (
         <div>
             <div className="sidebar">
-                <Link to={"/"} className="sidebarItem" onMouseEnter={changeColor} style={{ color: color }}>home</Link>
-                <Link to={"/about"} className="sidebarItem" onMouseEnter={changeColor} style={{ color: color }}>about</Link>
-                <Link to={"/music"} className="sidebarItem" onMouseEnter={changeColor} style={{ color: color }}>music</Link>
-                <Link to={"/work"} className="sidebarItem" onMouseEnter={changeColor} style={{ color: color }}>work</Link>
-                <Link to={"/contact"} className="sidebarItem" onMouseEnter={changeColor} style={{ color: color }}>contact</Link>
+                <Link to={"/"} className="sidebarItem" style={{ color: color }}>home</Link>
+                <Link to={"/about"} className="sidebarItem" style={{ color: color }}>about</Link>
+                <Link to={"/work"} className="sidebarItem" style={{ color: color }}>work</Link>
+                <Link to={"/music"} className="sidebarItem" style={{ color: color }}>music</Link>
+                <Link to={"/contact"} className="sidebarItem" style={{ color: color }}>contact</Link>
+                <br />
+                <div className="sidebarItem" id="changeColorButton" style={{ color: color }} onClick={changeColor}>change mood</div>
             </div>
             <div className="mobileSidebar">
                 <div className="mobileSidebarLink">
-                    <div onClick={handleClick}>{!isOpen ? 'menu' : 'X'}</div>
+                    <div onClick={handleClick} style={{ color: color }}>{!isOpen ? 'menu' : 'X'}</div>
                 </div>
-                <div className={`mobileSidebarList ${isOpen ? "is-open" : ""}`}>
-                    <Link to={"/"} className="mobileSidebarItem">home</Link>
-                    <Link to={"/about"} className="mobileSidebarItem">about</Link>
-                    <Link to={"/music"} className="mobileSidebarItem">music</Link>
-                    <Link to={"/work"} className="mobileSidebarItem">work</Link>
-                    <Link to={"/contact"} className="mobileSidebarItem">contact</Link>
-                    <div  className="mobileSidebarItem">contact</div>
+                <div className={`mobileSidebarList ${isOpen ? "is-open" : ""}`} style={{ backgroundColor: 'snow' }}>
+                    <Link to={"/"} className="mobileSidebarItem" style={{ color: color }}>home</Link>
+                    <Link to={"/about"} className="mobileSidebarItem" style={{ color: color }}>about</Link>
+                    <Link to={"/work"} className="mobileSidebarItem" style={{ color: color }}>work</Link>
+                    <Link to={"/music"} className="mobileSidebarItem" style={{ color: color }}>music</Link>
+                    <Link to={"/contact"} className="mobileSidebarItem" style={{ color: color }}>contact</Link>
+                    <br />
+                    <div className="mobileSidebarItem" id="changeColorButton" style={{ color: color }} onClick={changeColor}>change mood</div>
                 </div>
             </div>
         </div>

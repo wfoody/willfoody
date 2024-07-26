@@ -35,29 +35,29 @@ export const Contact = ({color, changeColor}) => {
     setName('');
     setEmail('');
     setMessage('');
-    setEmailSent(!emailSent);
+    setEmailSent(true);
   };
 
   return (
     <div className="container">
       <Sidebar color={color} changeColor={changeColor} />
       <div className='contactContainer'>
-        <div className='contactTitle' onMouseEnter={changeColor} style={{ color: color }}>let's connect</div>
+        <div className='contactTitle' style={{ color: color }}>let's connect</div>
         <form ref={form} onSubmit={sendEmail} className='contactForm'>
           <div className='contactItem'>
-            <label onMouseEnter={changeColor} style={{ color: color }}>Name:</label>
-            <input type="text" name="user_name" value={name} onChange={e => setName(e.target.value)} required style={{color: '#f000ff'}} className='contactInput'/>
+            <label style={{ color: color }}>Name:</label>
+            <input type="text" name="user_name" value={name} onChange={e => setName(e.target.value)} required style={{ color: color }} />
           </div>
           <div className='contactItem'>
-            <label onMouseEnter={changeColor} style={{ color: color }}>Email:</label>
-            <input type="email" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required className='contactInput'/>
+            <label style={{ color: color }}>Email:</label>
+            <input type="email" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required style={{ color: color }} />
           </div>
           <div className='contactItem'>
-            <label onMouseEnter={changeColor} style={{ color: color }}>Message:</label>
-            <textarea name="message" className='messageContainer' value={message} onChange={e => setMessage(e.target.value)} required />
+            <label style={{ color: color }}>Message:</label>
+            <textarea name="message" className='messageContainer' value={message} onChange={e => setMessage(e.target.value)} required style={{ color: color }}/>
           </div>
           <input type="submit" value="Send" className='submitButton' />
-          {emailSent ? <div className='emailSuccessMessage'>Your message has been sent successfully!</div> : <div></div>}
+          {emailSent ? <div className='emailSuccessMessage' style={{ color: color }}>Your message has been sent successfully!</div> : <div></div>}
         </form>
       </div>
     </div>

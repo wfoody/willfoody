@@ -7,7 +7,7 @@ function Home({color, changeColor}) {
     <div className="container">
       <Sidebar color={color} changeColor={changeColor}/>
       <div className="homeContainer">
-        <div className="nameContainer" onMouseEnter={changeColor} style={{ color: color }}>will foody</div>
+        <div className="nameContainer" style={{ color: color }}>will foody</div>
         </div>
     </div>
   );

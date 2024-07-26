@@ -9,9 +9,9 @@ function About({ color, changeColor }) {
     <div className="container">
       <Sidebar color={color} changeColor={changeColor} />
       <div className="aboutContainer">
-        <div className="aboutTitle" onMouseEnter={changeColor} style={{ color: color }}>about me</div>
+        <div className="aboutTitle" style={{ color: color }}>about me</div>
         <div className="aboutBody">
-          <div onMouseEnter={changeColor} style={{ color: color }}>
+          <div style={{ color: color }}>
             Hi, I'm Will Foody. I'm a composer and software engineer located in New York, NY. I enjoy spending my time at the intersection of music, design, and technology.
           </div>
         </div>

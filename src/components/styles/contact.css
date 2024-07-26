@@ -30,10 +30,6 @@ input {
     font-size: 25px;
 }
 
-.contactInput {
-    color: #f000ff !important;
-}
-
 textarea {
     font-family: 'Roboto Mono', monospace;
     border: none;
@@ -59,9 +55,8 @@ textarea::placeholder, input::placeholder {
 
 .emailSuccessMessage {
     margin-top: 25px;
-    max-width: 100%;
-    font-size: 30px;
-    flex-wrap: wrap;
+    width: 350px;
+    font-size: 25px;
 }
 
 
