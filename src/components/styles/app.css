@@ -14,6 +14,7 @@
   font-family: 'Robot Mono', monospace;
   color: #39FF14;
   padding: 50px;
+  height: 100vh;
 }
 
 @media (max-width: 600px) {
