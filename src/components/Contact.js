@@ -4,7 +4,7 @@ import 'reactjs-popup/dist/index.css';
 import Sidebar from './Sidebar';
 import './styles/contact.css'
 
-export const Contact = () => {
+export const Contact = ({color, changeColor}) => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -40,20 +40,20 @@ export const Contact = () => {
 
   return (
     <div className="container">
-      <Sidebar />
+      <Sidebar color={color} changeColor={changeColor} />
       <div className='contactContainer'>
-        <div className='contactTitle'>let's connect</div>
+        <div className='contactTitle' onMouseEnter={changeColor} style={{ color: color }}>let's connect</div>
         <form ref={form} onSubmit={sendEmail} className='contactForm'>
           <div className='contactItem'>
-            <label>Name:</label>
+            <label onMouseEnter={changeColor} style={{ color: color }}>Name:</label>
             <input type="text" name="user_name" value={name} onChange={e => setName(e.target.value)} required style={{color: '#f000ff'}} className='contactInput'/>
           </div>
           <div className='contactItem'>
-            <label>Email:</label>
+            <label onMouseEnter={changeColor} style={{ color: color }}>Email:</label>
             <input type="email" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required className='contactInput'/>
           </div>
           <div className='contactItem'>
-            <label>Message:</label>
+            <label onMouseEnter={changeColor} style={{ color: color }}>Message:</label>
             <textarea name="message" className='messageContainer' value={message} onChange={e => setMessage(e.target.value)} required />
           </div>
           <input type="submit" value="Send" className='submitButton' />
