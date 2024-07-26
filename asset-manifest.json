@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/willfoody/static/css/main.af2e9e0e.css",
+    "main.js": "/willfoody/static/js/main.28cb8ab2.js",
+    "static/js/453.ed3810f9.chunk.js": "/willfoody/static/js/453.ed3810f9.chunk.js",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/willfoody/static/media/Inter-VariableFont_slnt,wght.853e01975d2783d9fa29.ttf",
+    "static/media/goodtutor.png": "/willfoody/static/media/goodtutor.10acef6d17e6379c151a.png",
+    "static/media/RobotoMono-VariableFont_wght.ttf": "/willfoody/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
+    "static/media/represent.png": "/willfoody/static/media/represent.4cdad6ac1cbbba69bce6.png",
+    "index.html": "/willfoody/index.html",
+    "main.af2e9e0e.css.map": "/willfoody/static/css/main.af2e9e0e.css.map",
+    "main.28cb8ab2.js.map": "/willfoody/static/js/main.28cb8ab2.js.map",
+    "453.ed3810f9.chunk.js.map": "/willfoody/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af2e9e0e.css",
+    "static/js/main.28cb8ab2.js"
+  ]
+}
