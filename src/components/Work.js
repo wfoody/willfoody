@@ -11,11 +11,11 @@ function Work({color, changeColor}) {
       <div className="workContainer">
         <div className="workTitle" style={{ color: color }}>projects</div>
         <div className="workItem">
-          <a href="https://represent.surge.sh/" target="_blank" rel="noreferrer"><img src={represent} className="projectImage" alt="Represent App screenshot" style={{ color: color }}/></a>
+          <a href="https://represent-project.netlify.app/" target="_blank" rel="noreferrer"><img src={represent} className="projectImage" alt="Represent App screenshot" style={{ color: color }}/></a>
           <div className="projectImageText" style={{ color: color }}>A React/Redux web application designed as a platform to help you connect with your elected representatives. You can find this project on GitHub <a href="https://github.com/wfoody/Represent/" target="_blank" rel="noreferrer">here</a>.</div>
         </div>
         <div className="workItem">
-          <a href="https://goodtutor.surge.sh/" target="_blank" rel="noreferrer"><img src={goodtutor} className="projectImage"  alt="GoodTutor App screenshot" style={{ color: color }}/></a>
+          <img src={goodtutor} className="projectImage" alt="GoodTutor App screenshot" style={{ color: color }}/>
           <div className="projectImageText" style={{ color: color }}>GoodTutor is an accessible, online-learning platform designed to provide free tutoring services to students of all ages. You can find this project on GitHub <a href="https://github.com/wfoody/GoodTutor" target="_blank" rel="noreferrer">here</a>.</div>
         </div>
         <div className="workItem">
