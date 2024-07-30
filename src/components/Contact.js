@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Sidebar from './Sidebar';
 import './styles/contact.css'
+require('dotenv').config();
+const apiKey = process.env.API_KEY;
 
 export const Contact = ({color, changeColor}) => {
 
@@ -18,7 +20,7 @@ export const Contact = ({color, changeColor}) => {
 
     emailjs
     .sendForm('service_nvpj8wh', 'template_69xjrca', form.current, {
-      publicKey: 'avSd4vjIvAj_1YiR-',
+      publicKey: apiKey,
     })
       .then(
         () => {
@@ -30,7 +32,7 @@ export const Contact = ({color, changeColor}) => {
       );
     console.log(name, email, message);
     emailjs.sendForm('service_nvpj8wh', 'template_ex4rp6f', form.current, {
-      publicKey: 'avSd4vjIvAj_1YiR-',
+      publicKey: 'apiKey',
     });
     setName('');
     setEmail('');
